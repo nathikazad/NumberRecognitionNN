@@ -1,0 +1,3 @@
+For unoptimized c executable called nn issue command make
+For cpu executable called nn_cpu issue command make cpu
+For phi executable called nn_phi issue command make phi
