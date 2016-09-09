@@ -29,6 +29,7 @@ int main()
     char testing_image_file[]="data/t10k-images-idx3-ubyte";
     char testing_label_file[]="data/t10k-labels-idx1-ubyte";
     float correct_predictions = 0;
+    //Training
     for(int j=0;j<epoch;j++)
     {
         printf("Epoch %d\n", j);
@@ -47,6 +48,7 @@ int main()
     fclose(imageFile);
     fclose(labelFile);
     
+    //Testing
     imageFile = openMNISTImageFile(testing_image_file);
     labelFile = openMNISTLabelFile(testing_label_file);
     for(int i=0;i<MNIST_MAX_TESTING_IMAGES;i++)

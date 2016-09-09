@@ -13,17 +13,14 @@ float* NeuralNetwork::compute(float* inputs)
 }
 void NeuralNetwork::train(float* inputs, float* outputs)
 {
-	
 	this->output_layer->train_as_output(this->neuron_layer->output_vector, outputs);
 	this->neuron_layer->train_as_hidden(inputs, this->output_layer);
 }
 
 void NeuralNetwork::debug()
 {
-	
 	printf("Neuron Layer\n");
 	this->neuron_layer->debug();
 	printf("Output Layer\n");
 	this->output_layer->debug();
-
 }
