@@ -14,41 +14,6 @@ int max_index(float *array)
 }
 
 
-// int main()
-// {
-// 	time_t t;
-// 	srand((unsigned) time(&t));
-// 	NeuralNetwork NN(1, 3, 1);
-// 	float *output;
-// 	float input[1];
-// 	float desired_output[1];
-// 	float discrete_output;
-// 	float correct = 0;
-// 	int i;
-// 	for(i=0;i<iter;i++)
-// 	{
-// 		input[0]=(float)(rand()%1000)/1000;
-// 		// input[1]=(float)(rand()%1000)/1000;
-// 		desired_output[0]=0.0;
-// 		if(input[0]>0.5)
-// 			desired_output[0]=1.0;
-// 		output=NN.compute(input);
-// 		if(output[0]>0.5)
-// 			discrete_output=1.0;
-// 		else
-// 			discrete_output=0.0;
-		
-// 		if(discrete_output==desired_output[0])
-// 			correct++;
-
-// 		NN.train(input,desired_output);
-// 		printf("x=%.3f o=%.1f do=%.1f %s \n", input[0], discrete_output, desired_output[0], (discrete_output==desired_output[0]) ? "CORRECT" : "WRONG");
-// 		// NN.debug();
-		
-// 	}
-// 	printf("Correct:%f\n",correct/iter);
-// }
-
 int main()
 {
 	time_t t; 
