@@ -6,3 +6,4 @@ If you have an OpenMP enabled processor type
 make phi
 it will make file call 'nn_phi'
 
+Note: I have used Matt Lind's mnist-utils to convert datastreams into formatted vectors.
