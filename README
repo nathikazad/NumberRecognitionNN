@@ -1,3 +1,8 @@
-For unoptimized c executable called nn issue command make
-For cpu executable called nn_cpu issue command make cpu
-For phi executable called nn_phi issue command make phi
+This is a fully self contained repository to do number recognition using feed forward neural networks. 
+If you have a normal computer type 
+make cpu
+it will make file call 'nn_cpu'
+If you have an OpenMP enabled processor type
+make phi
+it will make file call 'nn_phi'
+

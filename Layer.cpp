@@ -24,7 +24,7 @@ float* Layer::compute(float* inputs)
 void Layer::train_as_output(float* inputs, float* desired_outputs)
 {
 	int i;
-	// #pragma omp parallel for 
+	#pragma omp parallel for 
 	for(i=0;i<number_of_neurons;i++)
 	{
 		// printf("Neuron:%d \n",i);
@@ -33,7 +33,7 @@ void Layer::train_as_output(float* inputs, float* desired_outputs)
 }
 void Layer::train_as_hidden(float* inputs, Layer* after)
 {
-	// #pragma omp parallel for 
+	#pragma omp parallel for 
 	for(int i=0;i<number_of_neurons;i++)
 	{
 		// printf("Neuron:%d \n",i);
